@@ -12,7 +12,7 @@ namespace PickRandomCards
             
             if (gameState == 0)
             {
-                Console.WriteLine("You have started the PickCard Game Congrats! /n");
+                Console.WriteLine("You have started the PickCard Game Congrats! \n");
                 Console.WriteLine("Enter the number of cards to pick ");
 
                String outerLine = Console.ReadLine();
@@ -23,8 +23,8 @@ namespace PickRandomCards
                 }
                 else
                 {
-                    Console.WriteLine("You have entered string instead of number!");
-
+                    Console.WriteLine("You have entered string instead of number! Try again");
+                    MessageController(gameState);
                 }
             }
             
